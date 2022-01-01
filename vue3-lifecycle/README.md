@@ -42,12 +42,7 @@
 
 - 이벤트와 라이프사이클이 초기화 됨
 
-<div style='display: flex; justify-content: center;' >
-<h3> 
-  <span style='color:#ec214c'>Method | <span> 
-</h3>
-<h3 style='font-weight: 700'> &nbsp; beforeCreate </h3>
-</div>
+<h3> Method | beforeCreate </h3>
 
 - 잘 사용하지 않음
 - 컴포넌트가 생성되기 직전
@@ -61,12 +56,7 @@
 
 <br />
 
-<div style='display: flex; justify-content: center;' >
-<h3> 
-  <span style='color:#ec214c'>Method | <span> 
-</h3>
-<h3 style='font-weight: 700'> &nbsp; created * </h3>
-</div>
+<h3> Method | created * </h3>
 - 컴포넌트가 생성된 직후
 
 <br />
@@ -78,12 +68,7 @@
 
 <br />
 
-<div style='display: flex; justify-content: center;' >
-<h3> 
-  <span style='color:#ec214c'>Method | <span> 
-</h3>
-<h3 style='font-weight: 700'> &nbsp; beforeMount </h3>
-</div>
+<h3> Method | beforeMount </h3>
 
 - html 에 연결되는 마운트 직전에 만들어지는 것
 
@@ -95,16 +80,11 @@
 
 <br />
 
-<div style='display: flex; justify-content: center;' >
-<h3> 
-  <span style='color:#ec214c'>Method | <span> 
-</h3>
-<h3 style='font-weight: 700'> &nbsp; mounted * </h3>
-</div>
+<h3> Method | mounted * </h3>
 
 - html에 연결이 된 직후에 만들어지는 것
 - mount 된 직후
-- 실제로 화면이 렌더링된
+- 실제로 화면이 렌더링됐을 때
 
 <br />
 
@@ -114,12 +94,7 @@
 
 <br />
 
-<div style='display: flex; justify-content: center;' >
-<h3> 
-  <span style='color:#ec214c'>Method | <span> 
-</h3>
-<h3 style='font-weight: 700'> &nbsp; beforeUpdate </h3>
-</div>
+<h3> Method | beforeUpdate </h3>
 
 - 데이터가 변동되고 리렌더링 되기 전에 작동
 
@@ -133,12 +108,7 @@
 
 <br />
 
-<div style='display: flex; justify-content: center;' >
-<h3> 
-  <span style='color:#ec214c'>Method | <span> 
-</h3>
-<h3 style='font-weight: 700'> &nbsp; updated </h3>
-</div>
+<h3> Method | updated </h3>
 
 - update 가 된 후, 즉 데이터가 변경되고 변경된 데이터로 리렌더링 된 직후에 작동하는 메소드
 
@@ -150,12 +120,7 @@
 
 <br />
 
-<div style='display: flex; justify-content: center;' >
-<h3> 
-  <span style='color:#ec214c'>Method | <span> 
-</h3>
-<h3 style='font-weight: 700'> &nbsp; beforeUnmout </h3>
-</div>
+<h3> Method | beforeUnmout </h3>
 
 - 컴포넌트가 끊어지기 직전에 사용되는 메소드
 
@@ -167,11 +132,6 @@
 
 <br />
 
-<div style='display: flex; justify-content: center;' >
-<h3> 
-  <span style='color:#ec214c'>Method | <span> 
-</h3>
-<h3 style='font-weight: 700'> &nbsp; unmounted </h3>
-</div>
+<h3> Method | unmounted </h3>
 
 - 컴포넌트가 끊어졌을 때 사용하는 메소드
