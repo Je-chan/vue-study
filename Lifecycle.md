@@ -8,8 +8,8 @@
 
   ```jsx
   Vue.createApp({})
-    .component("SearchInput", SearchInputComponent)
-    .directive("focus", FocusDirective)
+    .component('SearchInput', SearchInputComponent)
+    .directive('focus', FocusDirective)
     .use(LocalPlugin);
   ```
 
