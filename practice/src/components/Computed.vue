@@ -83,7 +83,6 @@ export default {
         return this.computedSetterTest.split('').reverse().join('')
       }, 
       set(newValue) {
-        console.log('newValue', newValue)
         this.computedSetterTest = newValue
       }
     }
