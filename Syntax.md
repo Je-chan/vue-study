@@ -25,12 +25,11 @@
 
 ```jsx
 <a v-bind:href="url"></a>
-<a v-on:click='doSomething'></a>
+<a v-on:click="doSomething"></a>
 // v-bind 는 보통 약어로 생략해서 사용한다.
 
-<a :href='url'></a>
-<a @click='doSomething'></div>
-<div>
+<a :href="url"></a>
+<a @click="doSomething"></a>
 ```
 
 ## 4. 동적 전달 인자
