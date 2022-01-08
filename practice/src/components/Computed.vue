@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p>=== Computed ===</p>
     <section v-if='hasFruit'>
       <!--이렇게 하면 아쉬운 점은 같은 로직인데 세 번 로직이 실행된다는 점 -->
       <h1>{{ reverseMessage() }}</h1>

@@ -1,5 +1,8 @@
 <template>
+  <div>
+    <p>=== Lifecycle ===</p>
     <h1>{{count}}</h1>
+  </div>
 </template>
 
 <script>  

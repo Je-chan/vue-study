@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p>=== Syntax ===</p>
     <h1 @click="add">{{ msg }}</h1>
     <h1 v-once @click="add"> {{ msg }} </h1>
     <h1 v-html="content"></h1>
