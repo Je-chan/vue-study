@@ -5,6 +5,7 @@
     <Computed />
     <Watch />
     <Binding />
+    <IfRendering />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Syntax from './components/Syntax'
 import Computed from './components/Computed'
 import Watch from './components/Watch'
 import Binding from './components/Binding'
+import IfRendering from './components/IfRendering'
 
 export default { 
   
@@ -22,7 +24,9 @@ export default {
     Syntax,
     Computed,
     Watch,
-    Binding
+    Binding,
+    IfRendering,
+
   }
 }
 </script>
