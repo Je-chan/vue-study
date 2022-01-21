@@ -7,6 +7,7 @@
     <Binding />
     <IfRendering />
     <ListRendering />
+    <EventHandling />
   </div>
 </template>
 
@@ -18,9 +19,9 @@ import Watch from './components/Watch'
 import Binding from './components/Binding'
 import IfRendering from './components/IfRendering'
 import ListRendering from './components/ListRendering'
+import EventHandling from './components/EventHandling'
 
 export default { 
-  
   components: {
     Lifecycle,
     Syntax,
@@ -28,7 +29,8 @@ export default {
     Watch,
     Binding,
     IfRendering,
-    ListRendering
+    ListRendering,
+    EventHandling
   }
 }
 </script>
