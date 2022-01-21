@@ -6,6 +6,7 @@
     <Watch />
     <Binding />
     <IfRendering />
+    <ListRendering />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import Computed from './components/Computed'
 import Watch from './components/Watch'
 import Binding from './components/Binding'
 import IfRendering from './components/IfRendering'
+import ListRendering from './components/ListRendering'
 
 export default { 
   
@@ -26,7 +28,7 @@ export default {
     Watch,
     Binding,
     IfRendering,
-
+    ListRendering
   }
 }
 </script>
@@ -42,5 +44,8 @@ export default {
     font-size: 2rem;
     color: orange;
     margin-bottom: 1rem;
+  }
+  section {
+    margin-top: 1.5rem;
   }
 </style>
