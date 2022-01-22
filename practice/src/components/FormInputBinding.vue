@@ -14,13 +14,40 @@
       <input 
         type="text"
         :value='msg2'
-        v-model='msg2'/>
+        v-model="msg2"/>
     </section>
     <section>  
     <h1>{{ checked }}</h1>
       <input 
         type="checkbox"
-        v-model='checked'/>
+        v-model="checked"/>
+    </section>
+    <section>
+      <h1>{{ msg3 }}</h1>
+      <input 
+        type="text"
+        @change='msg3 = $event.target.value' />
+    </section>
+    <section>
+      <h1>{{ msg4 }}</h1>
+      <input 
+        type="text"
+        :value='msg4'
+        v-model.lazy='msg4' />
+    </section>
+    <section>
+      <h1>{{ msg5 }}</h1>
+      <input 
+        type="text"
+        :value='msg5'
+        v-model.number='msg5' />
+    </section>
+    <section>
+      <h1>{{ msg6 }}</h1>
+      <input 
+        type="text"
+        :value='msg6'
+        v-model.number="msg6" />
     </section>
   </div>
 </template>
@@ -32,6 +59,10 @@ export default {
     return {
       msg: '$event',
       msg2: 'v-model',
+      msg3: '@change',
+      msg4: 'lazy',
+      msg5: 123,
+      msg6: 'trim',
       checked: false
     }
   },
@@ -42,5 +73,11 @@ export default {
   //     this.msg = e.target.value
   //   }
   // }
+
+  watch: {
+    msg5() {
+      console.log(typeof this.msg5)
+    }
+  }
 }
 </script>
