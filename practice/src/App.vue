@@ -10,6 +10,7 @@
     <EventListener />
     <EventModifier />
     <KeyModifier />
+    <FormInputBinding />
   </div>
 </template>
 
@@ -24,6 +25,7 @@ import ListRendering from './components/ListRendering'
 import EventListener from './components/EventListener'
 import EventModifier from './components/EventModifier'
 import KeyModifier from './components/KeyModifier'
+import FormInputBinding from './components/FormInputBinding'
 
 export default { 
   components: {
@@ -36,7 +38,8 @@ export default {
     ListRendering,
     EventListener,
     EventModifier,
-    KeyModifier
+    KeyModifier,
+    FormInputBinding,
   }
 }
 </script>
