@@ -21,7 +21,7 @@
 
 <script>  
 export default { 
-  name: 'EventHandling',
+  name: 'EventListener',
   data () {
     return {
       thirdGood: 'Change me!',
@@ -35,7 +35,7 @@ export default {
     handlerA(msg) {
       return this.thirdGood = msg
     },
-    handlerB(msg) {
+    handlerB(msg) { 
       return this.thirdBad = msg
     }
   }

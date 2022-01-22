@@ -7,7 +7,7 @@
     <Binding />
     <IfRendering />
     <ListRendering />
-    <EventHandling />
+    <EventListener />
   </div>
 </template>
 
@@ -19,7 +19,7 @@ import Watch from './components/Watch'
 import Binding from './components/Binding'
 import IfRendering from './components/IfRendering'
 import ListRendering from './components/ListRendering'
-import EventHandling from './components/EventHandling'
+import EventListener from './components/EventListener'
 
 export default { 
   components: {
@@ -30,7 +30,7 @@ export default {
     Binding,
     IfRendering,
     ListRendering,
-    EventHandling
+    EventListener
   }
 }
 </script>
