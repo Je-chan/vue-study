@@ -9,6 +9,7 @@
     <ListRendering />
     <EventListener />
     <EventModifier />
+    <KeyModifier />
   </div>
 </template>
 
@@ -22,6 +23,7 @@ import IfRendering from './components/IfRendering'
 import ListRendering from './components/ListRendering'
 import EventListener from './components/EventListener'
 import EventModifier from './components/EventModifier'
+import KeyModifier from './components/KeyModifier'
 
 export default { 
   components: {
@@ -33,7 +35,8 @@ export default {
     IfRendering,
     ListRendering,
     EventListener,
-    EventModifier
+    EventModifier,
+    KeyModifier
   }
 }
 </script>
