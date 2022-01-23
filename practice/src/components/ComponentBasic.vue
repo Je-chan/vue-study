@@ -23,7 +23,15 @@
     </section>
     <section>
       <p>=== Slot ===</p>
-      <Slot />
+      <Slot>
+        <!-- v-slot 은 #으로 약어 사용할 수 있다 -->
+        <template #text>
+          <span>Slot</span>
+        </template>
+        <template v-slot:icon>
+          <span> (A) </span>
+        </template>
+      </Slot>
     </section>
   </div>
 </template>

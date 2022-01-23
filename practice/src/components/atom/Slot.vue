@@ -1,6 +1,7 @@
 <template>
   <div class="btn">
-    <slot>헤이</slot>
+    <slot name="icon"></slot>
+    <slot name="text"></slot>
   </div>
 </template>
 
