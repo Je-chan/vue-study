@@ -11,6 +11,7 @@
     <EventModifier />
     <KeyModifier />
     <FormInputBinding />
+    <ComponentBasic />
   </div>
 </template>
 
@@ -26,6 +27,7 @@ import EventListener from './components/EventListener'
 import EventModifier from './components/EventModifier'
 import KeyModifier from './components/KeyModifier'
 import FormInputBinding from './components/FormInputBinding'
+import ComponentBasic from './components/ComponentBasic'
 
 export default { 
   components: {
@@ -40,6 +42,7 @@ export default {
     EventModifier,
     KeyModifier,
     FormInputBinding,
+    ComponentBasic
   }
 }
 </script>
