@@ -13,12 +13,17 @@
       </Button>
     </section>
     <section>
-      <p>=== Inherit ===</p>
-      <Inherit 
-      class='je'
-      style="color: red; backgroundColor: #000;">
-        Inherit
-      </Inherit>
+      <p>=== Emit ===</p>
+      <!-- Vue 에서는 이벤트를 명시할 때 카멜 케이스가 아닌 케밥 케이스를 사용한다 -->
+      <Emit
+        @je='log'
+        @change-msg="logMsg">
+        Emit
+      </Emit>
+    </section>
+    <section>
+      <p>=== Slot ===</p>
+      <Slot />
     </section>
   </div>
 </template>
@@ -26,6 +31,8 @@
 <script>  
 import Button from './atom/Button.vue'
 import Inherit from './atom/Inherit.vue'
+import Emit from './atom/Emit.vue'
+import Slot from './atom/Slot.vue'
 
 export default { 
   name: 'ComponentBasic',
@@ -34,9 +41,19 @@ export default {
       color: '#000'
     }
   },
+  methods: {
+    log() {
+      console.log('Click')
+    },
+    logMsg(msg) {
+      console.log(msg)
+    }
+  },
   components: {
     Button,
-    Inherit
+    Inherit,
+    Emit,
+    Slot
   }
 
 }
