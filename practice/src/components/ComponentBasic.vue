@@ -12,11 +12,20 @@
         Advanced
       </Button>
     </section>
+    <section>
+      <p>=== Inherit ===</p>
+      <Inherit 
+      class='je'
+      style="color: red; backgroundColor: #000;">
+        Inherit
+      </Inherit>
+    </section>
   </div>
 </template>
 
 <script>  
 import Button from './atom/Button.vue'
+import Inherit from './atom/Inherit.vue'
 
 export default { 
   name: 'ComponentBasic',
@@ -26,7 +35,8 @@ export default {
     }
   },
   components: {
-    Button
+    Button,
+    Inherit
   }
 
 }
