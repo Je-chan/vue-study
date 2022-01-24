@@ -33,6 +33,18 @@
         </template>
       </Slot>
     </section>
+    <section>
+      <p>=== Provide and Inject ===</p>
+      <button @click="message = 'Liebe'">
+        Change
+      </button>
+      <h1>App: {{message}} </h1>
+      <Parent />
+    </section>
+    <section>
+      <p>=== Refs ===</p>
+      <Refs />
+    </section>
   </div>
 </template>
 
@@ -41,14 +53,28 @@ import Button from './atom/Button.vue'
 import Inherit from './atom/Inherit.vue'
 import Emit from './atom/Emit.vue'
 import Slot from './atom/Slot.vue'
+import Parent from './atom/Parent.vue'
+import {computed} from 'vue'
+import Refs from './atom/Refs.vue'
 
 export default { 
   name: 'ComponentBasic',
   data() {
     return {
-      color: '#000'
+      color: '#000',
+      message: 'Hello World!'
     }
   },
+  
+    components: {
+      Button,
+      Inherit,
+      Emit,
+      Slot,
+      Parent,
+      Refs
+    },
+
   methods: {
     log() {
       console.log('Click')
@@ -57,11 +83,14 @@ export default {
       console.log(msg)
     }
   },
-  components: {
-    Button,
-    Inherit,
-    Emit,
-    Slot
+  
+
+  provide() {
+    return {
+      msg: computed(() => {
+        return this.message
+      })
+    }
   }
 
 }
