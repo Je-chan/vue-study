@@ -65,15 +65,15 @@ export default {
       message: 'Hello World!'
     }
   },
-  
-    components: {
-      Button,
-      Inherit,
-      Emit,
-      Slot,
-      Parent,
-      Refs
-    },
+
+  components: {
+    Button,
+    Inherit,
+    Emit,
+    Slot,
+    Parent,
+    Refs
+  },
 
   methods: {
     log() {
@@ -83,7 +83,6 @@ export default {
       console.log(msg)
     }
   },
-  
 
   provide() {
     return {
@@ -91,7 +90,7 @@ export default {
         return this.message
       })
     }
-  }
+  },
 
 }
 </script>
