@@ -12,6 +12,7 @@
     <KeyModifier />
     <FormInputBinding />
     <ComponentBasic />
+    <CompositionInit />
   </div>
 </template>
 
@@ -28,6 +29,7 @@ import EventModifier from './components/EventModifier'
 import KeyModifier from './components/KeyModifier'
 import FormInputBinding from './components/FormInputBinding'
 import ComponentBasic from './components/ComponentBasic'
+import CompositionInit from './components/CompositionInit'
 
 export default { 
   components: {
@@ -42,7 +44,8 @@ export default {
     EventModifier,
     KeyModifier,
     FormInputBinding,
-    ComponentBasic
+    ComponentBasic,
+    CompositionInit
   }
 }
 </script>
