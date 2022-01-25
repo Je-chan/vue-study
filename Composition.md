@@ -13,3 +13,8 @@
 - watch: `watch(감시할 대상, (변화된 내용)=>{ 감시 대상에 변화가 감지되면 실행할 함수})`
 - mounted: `onMounted(()=> {})`
 - created: setup 에 그냥 선언하면 된다. setup 은 created 라이프 사이클, 컴포넌트가 생성된 직후에 동작하기에 .
+
+## 3. props, context
+
+- setup 의 첫 번째 인자로 props 를 받는다. 이건 진짜 말 그대로의 props.
+- 두 번째 인자로 context 를 받는다. context 내부에는 props 이외의 모든 것들, attrs, slots, emit, expose 가 포함된다.
