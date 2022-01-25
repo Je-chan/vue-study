@@ -1,15 +1,10 @@
 <template lang="">
-  <h1 @click="increase">
-    {{count}} / {{ tripleCount}}
-  </h1>
-  <h1>
-    {{ msg }} / {{ reversedMsg }}
-  </h1>
+  <h1 @click="increase">{{ count }} / {{ tripleCount }}</h1>
+  <h1>{{ msg }} / {{ reversedMsg }}</h1>
 </template>
 
 <script>
-
-import {ref, computed} from 'vue'
+import { ref, computed } from 'vue'
 
 export default {
   // ! 기존 Vue.2
@@ -35,7 +30,7 @@ export default {
   //   }
   //}
 
-  // ! Vue.3 
+  // ! Vue.3
   setup() {
     const msg = ref('Hello World!')
     const reversedMsg = computed(() => {
@@ -54,9 +49,8 @@ export default {
       reversedMsg,
       count,
       tripleCount,
-      increase
+      increase,
     }
-
-  }
+  },
 }
 </script>

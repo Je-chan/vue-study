@@ -16,7 +16,7 @@
   </div>
 </template>
 
-<script>  
+<script>
 import Lifecycle from './components/Lifecycle'
 import Syntax from './components/Syntax'
 import Computed from './components/Computed'
@@ -31,7 +31,7 @@ import FormInputBinding from './components/FormInputBinding'
 import ComponentBasic from './components/ComponentBasic'
 import CompositionInit from './components/CompositionInit'
 
-export default { 
+export default {
   components: {
     Lifecycle,
     Syntax,
@@ -45,24 +45,24 @@ export default {
     KeyModifier,
     FormInputBinding,
     ComponentBasic,
-    CompositionInit
-  }
+    CompositionInit,
+  },
 }
 </script>
 
 <style>
-  div{
-    margin: 2rem 1rem;
-  }
-  h1 {
-    font-size: 2rem;
-  }
-  p {
-    font-size: 2rem;
-    color: orange;
-    margin-bottom: 1rem;
-  }
-  section {
-    margin-top: 1.5rem;
-  }
+div {
+  margin: 2rem 1rem;
+}
+h1 {
+  font-size: 2rem;
+}
+p {
+  font-size: 2rem;
+  color: orange;
+  margin-bottom: 1rem;
+}
+section {
+  margin-top: 1.5rem;
+}
 </style>
